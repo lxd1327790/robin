@@ -47,16 +47,18 @@ export default function Home() {
   return (
     <main>
       <header className="site-header">
-        <a className="brand" href="#top" aria-label="Robin Logistics home">
+        <a className="brand" href="/" aria-label="Robin Logistics home">
           <img src="/robin-logo.png" alt="Robin Logistics" />
         </a>
         <nav aria-label="Primary navigation">
-          <a href="#about">About</a>
-          <a href="#services">Services</a>
-          <a href="#process">How we work</a>
-          <a href="#contact">Contact</a>
+          <a href="/about">About</a>
+          <a href="/services">Services</a>
+          <a href="/china-origin-management">China Origin</a>
+          <a href="/industries">Industries</a>
+          <a href="/trade-lanes">Trade Lanes</a>
+          <a href="/contact">Contact</a>
         </nav>
-        <a className="header-cta" href="#quote">Request a quote</a>
+        <a className="header-cta" href="/contact">Request a quote</a>
       </header>
 
       <section className="hero" id="top">
@@ -69,8 +71,8 @@ export default function Home() {
             One accountable team for supplier coordination, origin operations and international freight.
           </p>
           <div className="hero-actions">
-            <a className="button primary" href="#quote">Plan your shipment <span>→</span></a>
-            <a className="button ghost" href="#services">Explore our services</a>
+            <a className="button primary" href="/contact">Plan your shipment <span>→</span></a>
+            <a className="button ghost" href="/services">Explore our services</a>
           </div>
         </div>
         <div className="hero-proof">
