@@ -1,4 +1,7 @@
 import { PageHero, PageLayout } from "../_components/SiteChrome";
+import { pageMetadata } from "../seo";
+
+export const metadata = pageMetadata("China Origin Logistics & Supplier Coordination | Robin Logistics", "Coordinate Chinese suppliers, pickups, warehousing, consolidation, export documents and freight through one accountable logistics team in Guangzhou.", "/china-origin-management");
 
 const stages = [
   ["Supplier alignment","Confirm cargo-ready dates, quantities, packaging and pickup requirements."],

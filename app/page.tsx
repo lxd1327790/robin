@@ -1,3 +1,11 @@
+import { pageMetadata } from "./seo";
+
+export const metadata = pageMetadata(
+  "China Freight Forwarder & Logistics Company | Robin Logistics",
+  "Robin Logistics is a Guangzhou freight forwarder providing ocean freight, air freight, China origin services, warehousing, consolidation and international shipping.",
+  "/"
+);
+
 const services = [
   {
     number: "01",
@@ -88,8 +96,8 @@ export default function Home() {
         </div>
         <div className="intro-copy">
           <p>
-            Sourcing from China often means different suppliers, schedules, documents and handoffs.
-            Robin Logistics brings them together through one operating team and one clear line of accountability.
+            Robin Logistics is a Guangzhou-based freight forwarder and China logistics company supporting international importers.
+            We bring suppliers, schedules, documents and handoffs together through one operating team and one clear line of accountability.
           </p>
           <p>
             Headquartered in Guangzhou, our 50+ specialists work across Sales, Commercial, Operations,

@@ -1,4 +1,7 @@
 import { PageHero, PageLayout } from "../_components/SiteChrome";
+import { pageMetadata } from "../seo";
+
+export const metadata = pageMetadata("China Logistics for Importers, Brands & Retailers | Robin Logistics", "Freight forwarding and China supply chain support for importers, distributors, brands, retailers, e-commerce and industrial cargo customers.", "/industries");
 
 const industries = [
   ["Importers & distributors","Consolidate suppliers, protect schedules and simplify origin operations in China."],

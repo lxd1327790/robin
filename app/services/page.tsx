@@ -1,5 +1,8 @@
 import Link from "next/link";
 import { PageHero, PageLayout } from "../_components/SiteChrome";
+import { pageMetadata } from "../seo";
+
+export const metadata = pageMetadata("Freight Forwarding Services from China | Robin Logistics", "Ocean freight, air freight, China warehousing, consolidation, customs documentation and supplier coordination for international shipments.", "/services");
 
 const services = [
   ["/services/ocean-freight", "Ocean Freight", "FCL and LCL solutions supported by origin coordination, documentation and destination partners."],

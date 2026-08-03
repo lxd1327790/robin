@@ -1,5 +1,8 @@
 import { Footer, Header } from "../_components/SiteChrome";
 import { QuoteForm } from "../_components/QuoteForm";
+import { pageMetadata } from "../seo";
+
+export const metadata = pageMetadata("Request a China Freight Quote | Robin Logistics", "Request an ocean freight, air freight, warehousing or China origin logistics quotation from Robin Logistics in Guangzhou.", "/contact");
 
 export default function ContactPage() {
   return (

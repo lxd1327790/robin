@@ -1,4 +1,7 @@
 import { PageHero, PageLayout } from "../_components/SiteChrome";
+import { pageMetadata } from "../seo";
+
+export const metadata = pageMetadata("About Robin Logistics | Guangzhou Freight Forwarder", "Meet Robin Logistics, a Guangzhou-based international freight forwarding team established in 2018 with 50+ logistics specialists.", "/about");
 
 export default function AboutPage() {
   return (

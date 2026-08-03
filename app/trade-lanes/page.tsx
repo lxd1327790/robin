@@ -1,4 +1,7 @@
 import { PageHero, PageLayout } from "../_components/SiteChrome";
+import { pageMetadata } from "../seo";
+
+export const metadata = pageMetadata("International Shipping from China | Global Freight Coverage", "International freight forwarding from China to Southeast Asia, the Middle East, Africa, Europe, North America and South America.", "/trade-lanes");
 
 const lanes = [
   ["Southeast Asia","Regional ocean and air options connecting China with key Southeast Asian markets."],
