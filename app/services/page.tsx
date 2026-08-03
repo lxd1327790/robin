@@ -13,7 +13,7 @@ const services = [
 export default function ServicesPage() {
   return (
     <PageLayout>
-      <PageHero eyebrow="Services" title="End-to-end support at origin in China." copy="Choose the transport mode you need, or let us coordinate the complete origin process." image="/multimodal.png" />
+      <PageHero title="End-to-end support at origin in China." copy="Choose the transport mode you need, or let us coordinate the complete origin process." image="/multimodal.png" />
       <section className="subpage-section">
         <p className="eyebrow">What we manage</p>
         <h2>Services built around the shipment.</h2>

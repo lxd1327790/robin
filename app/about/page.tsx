@@ -4,7 +4,6 @@ export default function AboutPage() {
   return (
     <PageLayout>
       <PageHero
-        eyebrow="About Robin Logistics"
         title="A China-based team built for international trade."
         copy="We give overseas customers one accountable team for origin operations, international freight and destination coordination."
       />
