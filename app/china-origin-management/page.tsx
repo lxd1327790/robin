@@ -11,7 +11,7 @@ const stages = [
 export default function ChinaOriginPage() {
   return (
     <PageLayout>
-      <PageHero eyebrow="Origin Coordination in China" title="One team across every supplier and handoff." copy="We coordinate suppliers, pickups, warehousing, export documentation and freight execution through one accountable team in China." image="/warehouse.png" />
+      <PageHero title="One team across every supplier and handoff." copy="We coordinate suppliers, pickups, warehousing, export documentation and freight execution through one accountable team in China." image="/warehouse.png" />
       <section className="subpage-section split-copy">
         <div><p className="eyebrow">Why it matters</p><h2>Multiple suppliers should not mean multiple problems.</h2></div>
         <div className="long-copy"><p>Different production schedules, packaging standards and documents can create delays long before cargo reaches the port.</p><p>Robin Logistics gives you one operating view across suppliers, pickups, warehouse receiving, customs and carrier cut-offs.</p></div>

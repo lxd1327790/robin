@@ -52,7 +52,7 @@ export function PageHero({
   copy,
   image = "/hero-port.png",
 }: {
-  eyebrow: string;
+  eyebrow?: string;
   title: string;
   copy: string;
   image?: string;
@@ -62,7 +62,7 @@ export function PageHero({
       <img src={image} alt="" />
       <div className="page-hero-overlay" />
       <div className="page-hero-content">
-        <p className="eyebrow light">{eyebrow}</p>
+        {eyebrow && <p className="eyebrow light">{eyebrow}</p>}
         <h1>{title}</h1>
         <p>{copy}</p>
       </div>
