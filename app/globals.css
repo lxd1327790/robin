@@ -220,11 +220,13 @@ footer {
   grid-template-columns: 1.2fr .7fr 1fr;
   gap: 60px;
   padding: 70px clamp(28px, 7vw, 108px) 110px;
-  background: #041522;
-  color: #c4d3da;
+  background: #f4f8fa;
+  color: var(--grey);
+  border-top: 1px solid var(--pale);
 }
-.footer-brand img { width: 190px; margin-bottom: 18px; }
-footer h3 { margin: 0 0 14px; color: white; font-size: 14px; text-transform: uppercase; letter-spacing: .08em; }
+.footer-brand img { width: 210px; margin-bottom: 18px; }
+.footer-brand p { color: var(--ink); font-weight: 650; }
+footer h3 { margin: 0 0 14px; color: var(--navy); font-size: 14px; text-transform: uppercase; letter-spacing: .08em; }
 footer a, footer p { display: block; margin: 0 0 8px; line-height: 1.6; }
 .copyright { position: absolute; left: clamp(28px, 7vw, 108px); bottom: 30px; color: #718792; font-size: 13px; }
 

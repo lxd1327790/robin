@@ -65,7 +65,6 @@ export default function Home() {
         <img className="hero-image" src="/hero-port.png" alt="Container vessel at an international port" />
         <div className="hero-overlay" />
         <div className="hero-content">
-          <p className="eyebrow light">China-origin logistics</p>
           <h1>Your Logistics<br />Control Tower in China</h1>
           <p className="hero-copy">
             One accountable team for supplier coordination, origin operations and international freight.
