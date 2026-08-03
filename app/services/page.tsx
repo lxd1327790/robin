@@ -6,7 +6,7 @@ const services = [
   ["/services/air-freight", "Air Freight", "Time-sensitive airport-to-airport and door-to-door options for general and special cargo."],
   ["/services/warehousing-consolidation", "Warehousing & Consolidation", "Receiving, cargo checks, labeling, palletizing, supplier consolidation and loading."],
   ["/services/customs-origin-services", "Customs & Origin Services", "Pickup, export declarations, shipping documents and factory coordination in China."],
-  ["/china-origin-management", "China Origin Management", "One operating team across multiple suppliers, purchase orders and shipment milestones."],
+  ["/china-origin-management", "China Supply Chain Coordination", "One operating team across multiple suppliers, purchase orders and shipment milestones."],
   ["/contact", "Destination Support", "Arrival, clearance and delivery coordination through trusted local partners."],
 ];
 

@@ -13,9 +13,9 @@ const lanes = [
 export default function TradeLanesPage() {
   return (
     <PageLayout>
-      <PageHero eyebrow="Trade lanes" title="From China to your market." copy="Our core coverage connects Chinese suppliers with destinations across Asia, the Middle East, Africa, Europe and the Americas." image="/hero-port.png" />
+      <PageHero eyebrow="Global Coverage" title="From China to your market." copy="Our network connects Chinese suppliers with destinations across Asia, the Middle East, Africa, Europe and the Americas." image="/hero-port.png" />
       <section className="subpage-section">
-        <p className="eyebrow">Core coverage</p><h2>Seven regions. One origin team.</h2>
+        <p className="eyebrow">Markets we serve</p><h2>Seven regions. One team in China.</h2>
         <div className="lane-grid">{lanes.map(([title, copy], index) => <article key={title}><span>0{index + 1}</span><h3>{title}</h3><p>{copy}</p></article>)}</div>
       </section>
     </PageLayout>

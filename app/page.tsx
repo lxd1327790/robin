@@ -53,9 +53,9 @@ export default function Home() {
         <nav aria-label="Primary navigation">
           <a href="/about">About</a>
           <a href="/services">Services</a>
-          <a href="/china-origin-management">China Origin</a>
-          <a href="/industries">Industries</a>
-          <a href="/trade-lanes">Trade Lanes</a>
+          <a href="/china-origin-management">China Operations</a>
+          <a href="/industries">Who We Serve</a>
+          <a href="/trade-lanes">Global Coverage</a>
           <a href="/contact">Contact</a>
         </nav>
         <a className="header-cta" href="/contact">Request a quote</a>
@@ -99,7 +99,7 @@ export default function Home() {
       </section>
 
       <section className="stats-band">
-        <p className="eyebrow light">Key trade lanes</p>
+        <p className="eyebrow light">Key markets</p>
         <div className="trade-lanes">
           <span>Southeast Asia</span><span>Middle East</span><span>North Africa</span>
           <span>Europe & Mediterranean</span><span>West Africa</span>

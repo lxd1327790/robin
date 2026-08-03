@@ -10,9 +10,9 @@ export function Header() {
       <nav aria-label="Primary navigation">
         <Link href="/about">About</Link>
         <Link href="/services">Services</Link>
-        <Link href="/china-origin-management">China Origin</Link>
-        <Link href="/industries">Industries</Link>
-        <Link href="/trade-lanes">Trade Lanes</Link>
+        <Link href="/china-origin-management">China Operations</Link>
+        <Link href="/industries">Who We Serve</Link>
+        <Link href="/trade-lanes">Global Coverage</Link>
         <Link href="/contact">Contact</Link>
       </nav>
       <Link className="header-cta" href="/contact">Request a quote</Link>
@@ -31,8 +31,9 @@ export function Footer() {
         <h3>Explore</h3>
         <Link href="/about">About Robin</Link>
         <Link href="/services">Services</Link>
-        <Link href="/china-origin-management">China Origin Management</Link>
-        <Link href="/trade-lanes">Trade Lanes</Link>
+        <Link href="/china-origin-management">China Operations</Link>
+        <Link href="/industries">Who We Serve</Link>
+        <Link href="/trade-lanes">Global Coverage</Link>
       </div>
       <div>
         <h3>Contact</h3>

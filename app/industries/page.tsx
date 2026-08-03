@@ -12,9 +12,9 @@ const industries = [
 export default function IndustriesPage() {
   return (
     <PageLayout>
-      <PageHero eyebrow="Industries & solutions" title="Logistics shaped around how your business ships." copy="We adapt the origin plan to your suppliers, cargo profile, shipment frequency and destination requirements." image="/control-room.png" />
+      <PageHero eyebrow="Who We Serve" title="Logistics shaped around how your business ships." copy="We support importers, distributors, brands, retailers and other businesses sourcing and shipping from China." image="/control-room.png" />
       <section className="subpage-section">
-        <p className="eyebrow">Who we support</p><h2>Practical solutions for different shipping models.</h2>
+        <p className="eyebrow">Industries & customers</p><h2>Practical solutions for different shipping models.</h2>
         <div className="industry-grid">{industries.map(([title, copy]) => <article key={title}><h3>{title}</h3><p>{copy}</p></article>)}</div>
       </section>
     </PageLayout>
