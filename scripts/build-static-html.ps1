@@ -24,8 +24,15 @@ $routes = @(
 if (Test-Path -LiteralPath $output) { Remove-Item -LiteralPath $output -Recurse -Force }
 New-Item -ItemType Directory -Path $assets -Force | Out-Null
 
-$css = Get-Content -Raw (Join-Path $project "app/globals.css")
-$css = $css -replace '(?m)^@import "tailwindcss";\s*', ''
+$sourceHomepage = Invoke-WebRequest -Uri ($SourceUrl + "/") -UseBasicParsing -TimeoutSec 30
+$stylesheetMatch = [regex]::Match($sourceHomepage.Content, '<link[^>]+href="([^"]+\.css)"[^>]+data-rsc-css-href')
+if (-not $stylesheetMatch.Success) { throw "Compiled source stylesheet not found" }
+$stylesheetUrl = if ($stylesheetMatch.Groups[1].Value.StartsWith("http")) {
+  $stylesheetMatch.Groups[1].Value
+} else {
+  $SourceUrl + $stylesheetMatch.Groups[1].Value
+}
+$css = (Invoke-WebRequest -Uri $stylesheetUrl -UseBasicParsing -TimeoutSec 30).Content
 [IO.File]::WriteAllText((Join-Path $assets "styles.css"), $css, [Text.UTF8Encoding]::new($false))
 
 $javascript = @'
