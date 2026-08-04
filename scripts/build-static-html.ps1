@@ -60,9 +60,14 @@ foreach ($route in $routes) {
   $html = [regex]::Replace($html, '<script(?![^>]*type="application/ld\+json")[^>]*>[\s\S]*?</script>', '', 'IgnoreCase')
   $html = [regex]::Replace($html, '<link[^>]+(?:as="script"|rel="modulepreload")[^>]*>', '', 'IgnoreCase')
   $html = [regex]::Replace($html, '<link[^>]+href="/_next/static/[^>]+>', '', 'IgnoreCase')
+  $html = [regex]::Replace($html, '<link[^>]+data-rsc-css-href=[^>]+>', '', 'IgnoreCase')
+  $depth = ($route.File -split '/').Count - 1
+  $prefix = "../" * $depth
   $html = $html -replace '</head>', '<link rel="stylesheet" href="/assets/styles.css" /></head>'
   $html = $html -replace '</body>', '<script src="/assets/site.js" defer></script></body>'
   $html = $html -replace [regex]::Escape($SourceUrl), ("https://" + $CustomDomain)
+  $html = $html -replace 'href="/', ('href="' + $prefix)
+  $html = $html -replace 'src="/', ('src="' + $prefix)
   $target = Join-Path $output $route.File
   New-Item -ItemType Directory -Path (Split-Path -Parent $target) -Force | Out-Null
   [IO.File]::WriteAllText($target, $html, [Text.UTF8Encoding]::new($false))
